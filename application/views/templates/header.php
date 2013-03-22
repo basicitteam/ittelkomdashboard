@@ -58,15 +58,15 @@ text-align: center;
 		<div class="row-fluid">
 			<div class="span2">
 				<ul class="nav nav-tabs nav-stacked">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'home'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/home'); ?>">Home</a></li>
                     <li class="nav-header">Kelola Data Institusi</li>
-                    <li><a href="#">Mahasiswa</a></li>
-                    <li><a href="#">Dosen</a></li>
-                    <li><a href="#">Pegawai</a></li>
-                    <li><a href="#">Fakultas</a></li>
-                    <li><a href="#">Prodi</a></li>
-                    <li><a href="#">Unit</a></li>
-                    <li><a href="#">Mitra Kerjasama</a></li>
-                    <li><a href="#">Ruangan</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'fakultas'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/fakultas/'); ?>">Fakultas</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'prodi'){ echo 'class="active"'; } } ?>><a href="#">Prodi</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'mahasiswa'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/mahasiswa/'); ?>">Mahasiswa</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'dosen'){ echo 'class="active"'; } } ?>><a href="#">Dosen</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'pegawai'){ echo 'class="active"'; } } ?>><a href="#">Pegawai</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'unit'){ echo 'class="active"'; } } ?>><a href="#">Unit</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'mitra_kerjasama'){ echo 'class="active"'; } } ?>><a href="#">Mitra Kerjasama</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'ruangan'){ echo 'class="active"'; } } ?>><a href="#">Ruangan</a></li>
 				</ul>
 			</div><!-- End Span2 -->
