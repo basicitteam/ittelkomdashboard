@@ -61,7 +61,7 @@ text-align: center;
                     <li <?php if(isset($nav)){ if($nav == 'home'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/home'); ?>">Home</a></li>
                     <li class="nav-header">Kelola Data Institusi</li>
                     <li <?php if(isset($nav)){ if($nav == 'fakultas'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/fakultas/'); ?>">Fakultas</a></li>
-                    <li <?php if(isset($nav)){ if($nav == 'prodi'){ echo 'class="active"'; } } ?>><a href="#">Prodi</a></li>
+                    <li <?php if(isset($nav)){ if($nav == 'prodi'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/prodi'); ?>">Prodi</a></li>
                     <li <?php if(isset($nav)){ if($nav == 'mahasiswa'){ echo 'class="active"'; } } ?>><a href="<?php echo site_url('admin/mahasiswa/'); ?>">Mahasiswa</a></li>
                     <li <?php if(isset($nav)){ if($nav == 'dosen'){ echo 'class="active"'; } } ?>><a href="#">Dosen</a></li>
                     <li <?php if(isset($nav)){ if($nav == 'pegawai'){ echo 'class="active"'; } } ?>><a href="#">Pegawai</a></li>
